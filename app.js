@@ -1,13 +1,20 @@
-const numbers = [2, 4, 6, 7, 8, 10];
-// let sum = 0;
-// for(let i = 1; i < numbers.length; i++){
-//     sum += numbers[i];
+// make fun use js
+const arr = [1, 2, 3, null, false, 4, 5, '', 'test', 6, 7];
+// let count = 0;
+// for(i = 0; i < arr.length; i++){
+//     for(j = 1; j < arr.length - 1; j++){
+//        if(!arr[j] || typeof arr[j] != 'number'){
+//         arr[j] = arr[j + 1];
+//         arr[j + 1] = undefined;
+//        }
+//     }
+//     if(arr[i] == undefined){
+//         count++;
+//     }
 // }
-// console.log(sum)
-let sum = 0;
-numbers.forEach(function(v, i){
-   if(i < 3){
-    sum += v;
-   }
-})
-console.log(sum)
+
+// arr.length -= count;
+// console.log(count, arr)
+
+const filterArray = arr.filter((v) => typeof v == 'number');
+console.log(filterArray)
